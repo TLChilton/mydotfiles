@@ -2,7 +2,9 @@
 
 A collection of my Linux configuration files.
 
-### vim plugins
+## vim plugins
+
+---
 
 Theme: [medic_chalk](https://github.com/ParamagicDev/vim-medic_chalk)
 
