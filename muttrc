@@ -1,0 +1,37 @@
+# Import Secure Information
+source "gpg2 -dq ~/.config/mutt/gmail.gpg |"
+
+# Basic Configuration
+set ssl_starttls = yes
+set ssl_force_tls = yes
+set abort_nosubject = no
+set mail_check = 60
+set timeout = 10
+set sort = "reverse-date-received"
+set copy = no
+set editor = "vim"
+set charset = "utf-8"
+set record = ""
+
+# Macros
+macro index gd "<change-folder>$postponed<enter>" "go to drafts"
+macro index gs "<change-folder>$record<enter>" "go to sent"
+macro index gi "<change-folder>$spoolfile<Enter>" "go to inbox"
+macro index gt "<change-folder>$trash<enter>" "go to trash""
+
+# Remote gmail folders
+set folder = "imaps://imap.gmail.com/"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/Drafts"
+set record = "+[Gmail]/Sent Mail"
+set trash = "+[Gmail]/Trash"
+
+# Local Cache folders
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+# SECURING
+set move = no  #Stop asking to move read messages to mbox!
+set imap_keepalive = 900
+
