@@ -39,3 +39,10 @@ Font: [DroidSansMono](https://nerdfonts.com-font-downloads)
 [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 
 	File icons that work with nerd fonts 
+
+## MailSpring mail client
+
+[mailspring-idido](https://github.com/NeoMahler/mailspring-idido)
+
+	Theme I'm using for mailspring
+
