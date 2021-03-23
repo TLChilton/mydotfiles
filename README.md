@@ -40,7 +40,7 @@ Font: [DroidSansMono](https://nerdfonts.com-font-downloads)
 
 	File icons that work with nerd fonts 
 
-## MailSpring mail client
+## MailSpring
 
 [mailspring-idido](https://github.com/NeoMahler/mailspring-idido)
 
