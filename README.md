@@ -42,7 +42,7 @@ Font: [DroidSansMono](https://nerdfonts.com-font-downloads)
 
 ## MailSpring
 
-[mailspring-idido](https://github.com/NeoMahler/mailspring-idido)
+[mailspring-bushido](https://github.com/TLChilton/mailspring-bushido)
 
-	Theme I'm using for mailspring
+	My custom theme for MailSpring. Forked from [Idido](https://github.com/neoMahler/mailspring-idido)
 
