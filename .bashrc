@@ -145,4 +145,5 @@ unset __conda_setup
 
 # My custom aliases
 alias wisdom="fortune | cowsay -n -f turtle"
-
+alias onetouch="xinput map-to-output 9 eDP1"
+alias multitouch="xinput set-prop 'Raydium Corporation Raydium Touch System' 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1"
