@@ -40,6 +40,12 @@ Font: [DroidSansMono](https://nerdfonts.com-font-downloads)
 
 	File icons that work with nerd fonts 
 
+## Fusuma
+
+[fusuma](https://github.com/iberianpig/fusuma)
+
+	Fusuma is the handler I choose for touchpad gestures. Works better than xinput
+
 ## MailSpring
 
 [mailspring-bushido](https://github.com/TLChilton/mailspring-bushido)
