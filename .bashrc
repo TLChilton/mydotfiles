@@ -144,5 +144,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # My custom aliases
-alias wisdom="fortune | cowsay -f turtle"
+alias wisdom="fortune | cowsay -n -f turtle"
 
