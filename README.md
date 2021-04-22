@@ -44,6 +44,5 @@ Font: [DroidSansMono](https://nerdfonts.com-font-downloads)
 
 [mailspring-bushido](https://github.com/TLChilton/mailspring-bushido)
 
-	My custom theme for MailSpring. 
-Forked from [Idido](https://github.com/neoMahler/mailspring-idido)
+	My custom theme for MailSpring. Forked from [Idido](https://github.com/neoMahler/mailspring-idido)
 
