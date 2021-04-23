@@ -166,7 +166,7 @@ Don't ask for a lighter load, ask for a stronger back.
 "The whole thing that makes a mathematician’s life worthwhile 
   is that he gets the grudging admiration of three or four colleagues."
 
--- Donald Knuth
+ -- Donald Knuth
 %
 "For a number of years I have been familiar with the observation 
  that the quality of programmers is a decreasing function of the 
@@ -175,7 +175,7 @@ Don't ask for a lighter load, ask for a stronger back.
  such disastrous effects, and I became convinced that the go to statement 
  should be abolished from all "higher level" programming languages."
 
--- Edsger W Dijkstra
+ -- Edsger W Dijkstra
 %
 "A convincing demonstration of correctness being impossible 
  as long as the mechanism is regarded as a black box, 
@@ -196,7 +196,7 @@ Don't ask for a lighter load, ask for a stronger back.
  or 'abstract', 'distributed' or 'higher-order' or 'applicative' 
  and you can almost be certain of having started a new cult."
 
--- Edsger W. Dijkstra
+ -- Edsger W. Dijkstra
 %
 The major cause [of the software crisis] 
 is that the machines have become several 
@@ -222,7 +222,7 @@ APL is a mistake, carried through to perfection.
  It is the language of the future for the programming 
  techniques of the past: it creates a new generation of coding bums.
 
- - Edsger Dijkstra
+ - Edsger W. Dijkstra
 %
 It is practically impossible to teach good programming 
  to students that have had a prior exposure to BASIC: 
@@ -253,7 +253,7 @@ challenge for computing science is hence a conceptual one,
 viz., what (abstract) mechanisms we can conceive without 
 getting lost in the complexities of our own making.
 
--- Esger W. Dijkstra
+ -- Edsger W. Dijkstra
 %
 "As economics is known as "The Miserable Science", 
  software engineering should be known as "The Doomed Discipline", 
@@ -264,5 +264,5 @@ getting lost in the complexities of our own making.
 %
 "A picture may be worth a thousand words, 
   a formula is worth a thousand pictures"
--- Edsger W. Dijkstra
+ -- Edsger W. Dijkstra
 %
