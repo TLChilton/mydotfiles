@@ -4,7 +4,7 @@ A collection of my Linux configuration files.
 
 ## vim plugins
 
-Theme: [medic_chalk](https://github.com/ParamagicDev/vim-medic_chalk)
+Theme: [gruvbox](https://github.com/morhetz/gruvbox)
 
 Font: [DroidSansMono](https://nerdfonts.com-font-downloads)
 
@@ -39,6 +39,10 @@ Font: [DroidSansMono](https://nerdfonts.com-font-downloads)
 [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 
 	File icons that work with nerd fonts 
+
+[inc-search](https://github.com/haya14busa/incsearch.vim)
+
+	Allows dynamic search highlighting for vim search commands
 
 ## Fusuma
 
