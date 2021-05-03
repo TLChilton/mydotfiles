@@ -26,7 +26,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
-Plugin 'ParamagicDev/vim-medic_chalk'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'preservim/nerdtree'
@@ -36,6 +35,8 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'morhetz/gruvbox'
+Plugin 'haya14busa/incsearch.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -86,6 +87,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:ycm_show_diagnostics_ui = 1
 let g:ycm_enable_diagnostics_signs = 1
 let g:ycm_echo_current_diagnostic = 1
+let g:airline_theme='gruvbox'
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
@@ -131,9 +133,19 @@ set smartindent
 set tabstop=4
 set nowrap
 set hidden
-set background=dark
 set encoding=UTF-8
-colorscheme medic_chalk
+colorscheme gruvbox
+set background=dark " for the dark version
+
+" Highlight Search Options
+set hlsearch
+let g:incsearch#auto_nohlsearch = 1
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map *  <Plug>(incsearch-nohl-*)
+map #  <Plug>(incsearch-nohl-#)
+map g* <Plug>(incsearch-nohl-g*)
+map g# <Plug>(incsearch-nohl-g#)
 
 map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
