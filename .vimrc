@@ -90,8 +90,8 @@ let g:ycm_echo_current_diagnostic = 1
 let g:airline_theme='gruvbox'
 
 " Exit Vim if NERDTree is the only window left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
+" autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+"    \ quit | endif
 
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
