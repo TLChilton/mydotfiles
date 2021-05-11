@@ -129,11 +129,13 @@ set smartcase
 set incsearch
 set autowrite
 set nu
+set autoindent
 set smartindent
 set tabstop=4
 set nowrap
 set hidden
 set encoding=UTF-8
+set wildmode=longest,list
 colorscheme gruvbox
 set background=dark " for the dark version
 
