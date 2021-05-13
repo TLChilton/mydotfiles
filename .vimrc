@@ -77,7 +77,6 @@ fu Get()
 		call GetTerm()
 endfu
 
-au VimEnter * NERDTree | wincmd p
 
 let NERDTreeShowHidden=1
 let g:auto_save = 1
@@ -90,8 +89,10 @@ let g:ycm_echo_current_diagnostic = 1
 let g:airline_theme='gruvbox'
 
 " Exit Vim if NERDTree is the only window left.
-" autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-"    \ quit | endif
+"autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+"   \ quit | endif
+" Automatically open NERDtree when opening vim
+autocmd VimEnter * NERDTree | wincmd p
 " Automatically add NERDtree on new tabs
 autocmd BufWinEnter * NERDTreeMirror
 
@@ -130,14 +131,14 @@ set backspace=indent,eol,start " backspace over everything
 set smartcase
 set incsearch
 set autowrite
-set nu
+set number 			"Displays line numbers
 set autoindent
 set smartindent
 set tabstop=4
 set nowrap
-set hidden
+set hidden			"makes unsaved files hidden when a new file is open
 set encoding=UTF-8
-set wildmenu
+set wildmenu		"wildmenu and wildmode affect tab completion
 set wildmode=list:longest,full
 colorscheme gruvbox
 set background=dark " for the dark version
@@ -160,3 +161,9 @@ map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
+
+" Buffer List commands from Practical Vim 2nd Edition p.85
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
