@@ -140,6 +140,7 @@ set hidden			"makes unsaved files hidden when a new file is open
 set encoding=UTF-8
 set wildmenu		"wildmenu and wildmode affect tab completion
 set wildmode=list:longest,full
+set mouse=n
 colorscheme gruvbox
 set background=dark " for the dark version
 
@@ -157,12 +158,17 @@ map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
+" Tab changing
 map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
-
-" Buffer List commands from Practical Vim 2nd Edition p.85
+" Window Changing
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <c-w>l
+" Buffer List navigation from Practical Vim 2nd Edition p.85
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
