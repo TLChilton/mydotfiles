@@ -58,7 +58,7 @@ endfu
 fu GetTerm()
 		terminal
 		wincmd x
-		res 40
+		res 60
 endfu
 
 fu GetCommitLog()
@@ -68,7 +68,7 @@ fu GetCommitLog()
 		GlLog
 		q
 		wincmd k
-		res 40
+		res 60
 		wincmd l
 endfu
 
@@ -92,6 +92,8 @@ let g:airline_theme='gruvbox'
 " Exit Vim if NERDTree is the only window left.
 " autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
 "    \ quit | endif
+" Automatically add NERDtree on new tabs
+autocmd BufWinEnter * NERDTreeMirror
 
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -135,11 +137,16 @@ set tabstop=4
 set nowrap
 set hidden
 set encoding=UTF-8
-set wildmode=longest,list
+set wildmenu
+set wildmode=list:longest,full
 colorscheme gruvbox
 set background=dark " for the dark version
 
 " Highlight Search Options
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
 set hlsearch
 let g:incsearch#auto_nohlsearch = 1
 map n  <Plug>(incsearch-nohl-n)
