@@ -54,13 +54,11 @@ fu RunProgram()
 		echom "un supported filetype"
 	endif
 endfu
-
 fu GetTerm()
 		terminal
 		wincmd x
 		res 60
 endfu
-
 fu GetCommitLog()
 		wincmd h
 		sp
@@ -71,12 +69,10 @@ fu GetCommitLog()
 		res 60
 		wincmd l
 endfu
-
 fu Get()
 		call GetCommitLog()
 		call GetTerm()
 endfu
-
 
 let NERDTreeShowHidden=1
 let g:auto_save = 1
@@ -88,24 +84,6 @@ let g:ycm_enable_diagnostics_signs = 1
 let g:ycm_echo_current_diagnostic = 1
 let g:airline_theme='gruvbox'
 
-" Exit Vim if NERDTree is the only window left.
-"autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-"   \ quit | endif
-" Automatically open NERDtree when opening vim
-autocmd VimEnter * NERDTree | wincmd p
-" Automatically add NERDtree on new tabs
-autocmd BufWinEnter * NERDTreeMirror
-
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
@@ -173,3 +151,8 @@ nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
+" Shortcut for getting directory of active buffer
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+" NERDTree shortcuts
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
