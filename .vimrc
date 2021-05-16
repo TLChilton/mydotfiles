@@ -57,7 +57,8 @@ endfu
 fu GetTerm()
 		terminal
 		wincmd x
-		res 60
+		res 40
+		wincmd j
 endfu
 fu GetCommitLog()
 		wincmd h
@@ -66,7 +67,7 @@ fu GetCommitLog()
 		GlLog
 		q
 		wincmd k
-		res 60
+		res 40
 		wincmd l
 endfu
 fu Get()
