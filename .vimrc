@@ -83,8 +83,22 @@ let g:airline#extensions#tabline#enabled = 1
 let g:ycm_show_diagnostics_ui = 1
 let g:ycm_enable_diagnostics_signs = 1
 let g:ycm_echo_current_diagnostic = 1
-let g:airline_theme='gruvbox'
+let g:airline_theme='gruvbox
 
+" Automatically open NERDtree when opening vim
+"autocmd VimEnter * NERDTree | wincmd p
+" Automatically add NERDtree on new tabs
+"autocmd BufWinEnter * NERDTreeMirror
+
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
