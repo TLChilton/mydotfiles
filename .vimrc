@@ -152,15 +152,15 @@ map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
 " Tab changing
-map <C-t><up> :tabr<cr>
-map <C-t><down> :tabl<cr>
-map <C-t><left> :tabp<cr>
-map <C-t><right> :tabn<cr>
+nnoremap <C-t><up> :tabr<cr>
+nnoremap <C-t><down> :tabl<cr>
+nnoremap <C-t><left> :tabp<cr>
+nnoremap <C-t><right> :tabn<cr>
 " Window Changing
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <c-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <c-w>l
 " Buffer List navigation from Practical Vim 2nd Edition p.85
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
