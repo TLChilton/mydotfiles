@@ -271,13 +271,16 @@ getting lost in the complexities of our own making.
  a banana but what you got was a gorilla holding the banana and the entire jungle."
   -- Joe Armstrong, creator of Erlang
 %
-"If a feature is sometimes dangerous, and there is a better option, then always use the better option."
+"If a feature is sometimes dangerous, 
+ and there is a better option, 
+ then always use the better option."
   -- Douglas Crockford, author of JavaScript: The Good Parts
 %
 "Simplicity is prerequisite for reliability."
   -- Edsger W. Dijkstra, computer scientist and educator
 %
-"The computing scientist's main challenge is not to get confused by the complexities of his own making."
+"The computing scientist's main challenge 
+ is not to get confused by the complexities of his own making."
   -- E. W. Dijkstra
 %
 "There are two ways of constructing a software design: 
@@ -288,7 +291,8 @@ getting lost in the complexities of our own making.
 %
 "Sometimes, the elegant implementation is just a function. 
  Not a method. Not a class. Not a framework. Just a function."
-  -- John Carmack, creator of DOOM (https://twitter.com/ID_AA_Carmack/status/53512300451201024)
+  -- John Carmack, creator of DOOM 
+    (https://twitter.com/ID_AA_Carmack/status/53512300451201024)
 %
 "Gear is the ultimate procrastination."
   -- Max Joseph, filmmaker
@@ -296,7 +300,8 @@ getting lost in the complexities of our own making.
 "Debugging is twice as hard as writing the code in the first place. 
  Therefore, if you write the code as cleverly as possible, 
  you are, by definition, not smart enough to debug it."
-  -- Brian W. Kernighan & P. J. Plauger, authors of The Elements of Programming Style
+  -- Brian W. Kernighan & P. J. Plauger, 
+    authors of The Elements of Programming Style
 %
 "We could, for instance, begin with cleaning up our 
  language by no longer calling a bug a bug but by 
@@ -310,28 +315,23 @@ getting lost in the complexities of our own making.
  such a profound effect: while, before, a program with only one bug 
  used to be "almost correct", afterwards a program with an error is 
  just "wrong" (because in error)."
-  -- E. W. Dijkstra, http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1036.html
-%
-"A monad is a monoid in the category of endofunctors, what's the problem?"
-  -- James Iry, fictionally quoting Philip Wadler, paraphrasing Saunders Mac Lane, co-founder of category theory.
-%
-"All told, a monad in X is just a monoid in the category of 
- endofunctors of X, with product × replaced by composition 
- of endofunctors and unit set by the identity endofunctor."
-  -- Saunders Mac Lane, co-founder of category theory
+  -- E. W. Dijkstra, 
+    http://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1036.html
 %
 "A program that produces incorrect results 
 	twice as fast is infinitely slower."
   -- John Osterhout
 %
-"She was the first machine man built that assisted the power of his brain instead of the strength of his arm."
+"She was the first machine man built that assisted 
+ the power of his brain instead of the strength of his arm."
   -- Rear Admiral Grace Murray Hopper, speaking about the Mark I
 %
 "…what was really required was a description of 
  the data and a statement of the relationships 
  between the data sets. … We must state 
  relationships, not procedures."
-  -- Rear Admiral Grace Murray Hopper, speaking of The Language Structures Group
+  -- Rear Admiral Grace Murray Hopper, 
+    speaking of The Language Structures Group
 %
 "[The Analytical Engine] might act 
  upon other things besides number, 
@@ -351,7 +351,8 @@ getting lost in the complexities of our own making.
  thought otherwise. … thus I began to 
  use the term “software engineering” … 
  It was an ongoing joke for a long time."
-  -- Margaret Hamilton, Director of Apollo Flight Computer Programming: https://medium.com/@verne/margaret-hamilton-the-engineer-who-took-the-apollo-to-the-moon-7d550c73d3fa
+  -- Margaret Hamilton, Director of Apollo Flight Computer Programming: 
+    https://medium.com/@verne/margaret-hamilton-the-engineer-who-took-the-apollo-to-the-moon-7d550c73d3fa
 %
 "So what I said in that talk was: 
  When we define a subtype, it ought 
@@ -361,14 +362,17 @@ getting lost in the complexities of our own making.
  but nobody had said that before. 
  This is known now as the Liskov Substitution Principle
  —it developed a life of its own! [laughs.]"
-  -- Barbara Liskov, computer scientist, on OOPSLA (1987): http://ethw.org/Oral-History:Barbara_Liskov_(2001)
+  -- Barbara Liskov, computer scientist, on OOPSLA (1987): 
+    http://ethw.org/Oral-History:Barbara_Liskov_(2001)
 %
 "When my students leave, I mourn."
-  -- Barbara Liskov, computer scientist: http://ethw.org/Oral-History:Barbara_Liskov_(2001)
+  -- Barbara Liskov, computer scientist: 
+    http://ethw.org/Oral-History:Barbara_Liskov_(2001)
 %
 "From then on, when anything went wrong 
    with a computer, we said it had bugs in it."
-  -- Rear Admiral Grace Murray Hopper, on the extraction of a moth from the Mark II
+  -- Rear Admiral Grace Murray Hopper, 
+    on the extraction of a moth from the Mark II
 %
 "Granted that the actual 
  mechanism is unerring in 
@@ -416,8 +420,10 @@ getting lost in the complexities of our own making.
  once by a logician and once by a computer scientist."
   -- Philip Wadler
 %
-"The functional programmer sounds rather like a mediæval monk, 
- denying himself the pleasures of life in the hope that it will make him virtuous."
+"The functional programmer sounds 
+ rather like a mediæval monk, 
+ denying himself the pleasures of 
+ life in the hope that it will make him virtuous."
   -- John Hughes, Why Functional Programming Matters
 %
 "It is not only not right, it is not even wrong."
@@ -426,4 +432,439 @@ getting lost in the complexities of our own making.
 "Precision diminishes the likelihood of truth, 
  but often increases the pragmatic value of a belief if it is true."
   -- Bertrand Russell
+%
+"Tonight I Can Write" by Pablo Neruda
+Tonight I can write the saddest lines.
+
+Write, for example, “The night is starry
+and the blue stars shiver in the distance.”
+
+The night wind revolves in the sky and sings.
+
+Tonight I can write the saddest lines.
+I loved her, and sometimes she loved me too.
+
+Through nights like this one I held her in my arms.
+I kissed her again and again under the endless sky.
+
+She loved me sometimes, and I loved her too.
+How could one not have loved her great still eyes.
+
+Tonight I can write the saddest lines.
+To think that I do not have her. To feel that I have lost her.
+
+To hear the immense night, still more immense without her.
+And the verse falls to the soul like dew to the pasture.
+
+What does it matter that my love could not keep her.
+The night is starry and she is not with me.
+
+This is all. In the distance someone is singing. In the distance.
+My soul is not satisfied that it has lost her.
+
+My sight tries to find her as though to bring her closer.
+My heart looks for her, and she is not with me.
+
+The same night whitening the same trees.
+We, of that time, are no longer the same.
+
+I no longer love her, that’s certain, but how I loved her.
+My voice tried to find the wind to touch her hearing.
+
+Another’s. She will be another’s. As she was before my kisses.
+Her voice, her bright body. Her infinite eyes.
+
+I no longer love her, that’s certain, but maybe I love her.
+Love is so short, forgetting is so long.
+
+Because through nights like this one I held her in my arms
+my soul is not satisfied that it has lost her.
+
+Though this be the last pain that she makes me suffer
+and these the last verses that I write for her."
+%
+"No Man Is An Island" by John Donne
+No man is an island,
+Entire of itself,
+Every man is a piece of continent,
+A part of the main.
+If a clod be washed away by the sea,
+Europe is the less.
+As well as if a promontory were.
+As well as if a manor of thy friend's
+Or of thine own were:
+Any man's death diminshes me,
+Because I am involved in mankind,
+And therefore never send to know for whom the bell tolls;
+It tolls for thee.
+%
+"Still I Rise" by Maya Angelou
+You may write me down in history
+With your bitter, twisted lies,
+You may trod me in the very dirt
+But still, like dust, I'll rise.
+
+Does my sassiness upset you?
+Why are you beset with gloom?
+’Cause I walk like I've got oil wells
+Pumping in my living room.
+
+Just like moons and like suns,
+With the certainty of tides,
+Just like hopes springing high,
+Still I'll rise.
+
+Did you want to see me broken?
+Bowed head and lowered eyes?
+Shoulders falling down like teardrops,
+Weakened by my soulful cries?
+
+Does my haughtiness offend you?
+Don't you take it awful hard
+’Cause I laugh like I've got gold mines
+Diggin’ in my own backyard.
+
+You may shoot me with your words,
+You may cut me with your eyes,
+You may kill me with your hatefulness,
+But still, like air, I’ll rise.
+
+Does my sexiness upset you?
+Does it come as a surprise
+That I dance like I've got diamonds
+At the meeting of my thighs?
+
+Out of the huts of history’s shame
+I rise
+Up from a past that’s rooted in pain
+I rise
+I'm a black ocean, leaping and wide,
+Welling and swelling I bear in the tide.
+
+Leaving behind nights of terror and fear
+I rise
+Into a daybreak that’s wondrously clear
+I rise
+Bringing the gifts that my ancestors gave,
+I am the dream and the hope of the slave.
+I rise
+I rise
+I rise.
+%
+"There Will Come Soft Rain" by Sara Teasdale
+There will come soft rain and the smell of the ground,
+And swallows circling with their shimmering sound;
+And frogs in the pools singing at night,
+And wild plum trees in tremulous white;
+Robins will wear their feathery fire,
+Whistling their whims on a low fence-wire;
+And not one will know of the war, not one
+Will care at last when it is done.
+Not one would mind, neither bird nor tree,
+If mankind perished utterly;
+And Spring herself, when she woke at dawn
+Would scarcely know that we were gone.
+%
+"O Captain! My Captain!" by Walt Whitman
+O Captain! my Captain! our fearful trip is done;
+The ship has weather’d every rack, the prize we sought is won;
+The port is near, the bells I hear, the people all exulting,
+While follow eyes the steady keel, the vessel grim and daring:
+But O heart! heart! heart!
+O the bleeding drops of red,
+Where on the deck my Captain lies,
+Fallen cold and dead.
+O Captain! my Captain! rise up and hear the bells;
+Rise up — for you the flag is flung — for you the bugle trills;
+For you bouquets and ribbon’d wreaths — for you the shores a-crowding;
+For you they call, the swaying mass, their eager faces turning;
+Here Captain! dear father!
+This arm beneath your head;
+It is some dream that on the deck,
+You’ve fallen cold and dead.
+My Captain does not answer, his lips are pale and still;
+My father does not feel my arm, he has no pulse nor will;
+The ship is anchor’d safe and sound, its voyage closed and done;
+From fearful trip, the victor ship, comes in with object won; 20
+Exult, O shores, and ring, O bells!
+But I, with mournful tread,
+Walk the deck my Captain lies,
+Fallen cold and dead.
+%
+"Fire and Ice" by Robert Frost
+Some say the world will end in fire,
+Some say in ice.
+From what I’ve tasted of desire
+I hold with those who favor fire.
+But if it had to perish twice,
+I think I know enough of hate
+To say that for destruction ice
+Is also great
+And would suffice.
+%
+"For You O Democracy" by Walt Whitman
+Come, I will make the continent indissoluble,
+I will make the most splendid race the sun ever shone upon,
+I will make divine magnetic lands,
+                   With the love of comrades,
+                      With the life-long love of comrades.
+
+I will plant companionship thick as trees along all the rivers of America, and along the shores of the great lakes, and all over the prairies,
+I will make inseparable cities with their arms about each other’s necks,
+                   By the love of comrades,
+                      By the manly love of comrades.
+
+For you these from me, O Democracy, to serve you ma femme!
+For you, for you I am trilling these songs.
+%
+"The Spring" by Thomas Carew
+Now that the winter's gone, the earth hath lost
+Her snow-white robes, and now no more the frost
+Candies the grass, or casts an icy cream
+Upon the silver lake or crystal stream;
+But the warm sun thaws the benumbed earth,
+And makes it tender; gives a sacred birth
+To the dead swallow; wakes in hollow tree
+The drowsy cuckoo, and the humble-bee.
+Now do a choir of chirping minstrels bring
+In triumph to the world the youthful Spring.
+The valleys, hills, and woods in rich array
+Welcome the coming of the long'd-for May.
+Now all things smile, only my love doth lour;
+Nor hath the scalding noonday sun the power
+To melt that marble ice, which still doth hold
+Her heart congeal'd, and makes her pity cold.
+The ox, which lately did for shelter fly
+Into the stall, doth now securely lie
+In open fields; and love no more is made
+By the fireside, but in the cooler shade
+Amyntas now doth with his Chloris sleep
+Under a sycamore, and all things keep
+Time with the season; only she doth carry
+June in her eyes, in her heart January.
+%
+"Hope is the thing with feathers" by Emily Dickinson
+“Hope” is the thing with feathers -
+That perches in the soul -
+And sings the tune without the words -
+And never stops - at all -
+
+And sweetest - in the Gale - is heard -
+And sore must be the storm -
+That could abash the little Bird
+That kept so many warm -
+
+I’ve heard it in the chillest land -
+And on the strangest Sea -
+Yet - never - in Extremity,
+It asked a crumb - of me.
+%
+"Valentine" by Donald Britton
+At first, we had ways of talking
+That filled up the evening
+Until some things could be said. It was a made-up
+Situation in which lives could be lost.
+Whatever that was now grows inside
+Our bodies—a spongy, pulpy cell—
+Causing pieces of paper we hold
+In our hands to appear
+
+And disappear. All I ask
+Is to take me away from this place,
+To another place, very much like
+This place, where we can meet
+And six months later
+Be married. You laughed and went with me.
+%
+"First Kiss" by Kim Addonizio
+Afterwards you had that drunk, drugged look
+my daughter used to get, when she had let go
+of my nipple, her mouth gone slack and her eyes
+turned vague and filmy, as though behind them
+the milk was rising up to fill her
+whole head, that would loll on the small
+white stalk of her neck so I would have to hold her
+closer, amazed at the sheer power
+of satiety, which was nothing like the needing
+to be fed, the wild flailing and crying until she fastened
+herself to me and made the seal tight
+between us, and sucked, drawing the liquid down
+and out of my body; no, this was the crowning
+moment, this giving of herself, knowing
+she could show me how helpless
+she was—that’s what I saw, that night when you
+pulled your mouth from mine and
+leaned back against a chain-link fence,
+in front of a burned-out church: a man
+who was going to be that vulnerable,
+that easy and impossible to hurt.
+%
+"The Look" by Sara Teasdale
+Strephon kissed me in the spring,
+Robin in the fall,
+But Colin only looked at me
+And never kissed at all.
+
+Strephon's kiss was lost in jest,
+Robin's lost in play,
+But the kiss in Colin's eyes
+Haunts me night and day.
+%
+"Spring in War-Time" by Sara Teasdale
+I feel the spring far off, far off,
+    The faint, far scent of bud and leaf—
+Oh, how can spring take heart to come
+    To a world in grief,
+    Deep grief?
+
+The sun turns north, the days grow long,
+    Later the evening star grows bright—
+How can the daylight linger on
+    For men to fight,
+    Still fight?
+
+The grass is waking in the ground,
+    Soon it will rise and blow in waves—
+How can it have the heart to sway
+    Over the graves,
+    New graves?
+
+Under the boughs where lovers walked
+    The apple-blooms will shed their breath—
+But what of all the lovers now
+    Parted by Death,
+    Grey Death?
+%
+"Defeated" by Sophie Jewett
+When the last fight is lost, the last sword broken;
+The last call sounded, the last order spoken;
+When from the field where braver hearts lie sleeping,
+Faint, and athirst, and blinded, I come creeping,
+With not one waving shred of palm to bring you,
+With not one splendid battle-song to sing you,
+O Love, in my dishonor and defeat,
+Your measureless compassion will be sweet.
+%
+"A Drinking Song" by William Butler Yeats
+Wine comes in at the mouth
+And love comes in at the eye;
+That’s all we shall know for truth
+Before we grow old and die.
+I lift the glass to my mouth,
+I look at you, and I sigh.
+%
+"Union Square" by Sara Teasdale
+With the man I love who loves me not,
+I walked in the street-lamps' flare;
+We watched the world go home that night
+In a flood through Union Square.
+
+I leaned to catch the words he said
+That were light as a snowflake falling;
+Ah well that he never leaned to hear
+The words my heart was calling.
+
+And on we walked and on we walked
+Past the fiery lights of the picture shows —
+Where the girls with thirsty eyes go by
+On the errand each man knows.
+
+And on we walked and on we walked,
+At the door at last we said good-bye;
+I knew by his smile he had not heard
+My heart's unuttered cry.
+
+With the man I love who loves me not
+I walked in the street-lamps' flare —
+But oh, the girls who ask for love
+In the lights of Union Square.
+%
+"A Girl" by Michael Field
+A Girl,
+     Her soul a deep-wave pearl
+Dim, lucent of all lovely mysteries;
+     A face flowered for heart’s ease,
+     A brow’s grace soft as seas
+     Seen through faint forest-trees:
+     A mouth, the lips apart,
+Like aspen-leaflets trembling in the breeze
+     From her tempestuous heart.
+     Such: and our souls so knit,
+     I leave a page half-writ —
+           The work begun
+Will be to heaven’s conception done,
+           If she come to it.
+%
+"The Voice" by Sara Teasdale
+Atoms as old as stars,
+Mutation on mutation,
+Millions and millions of cells
+Dividing, yet still the same;
+From air and changing earth,
+From ancient Eastern Rivers,
+From turquoise tropic seas,
+Unto myself I came.
+
+My spirit, like my flesh,
+Sprang from a thousand sources,
+From cave-man, hunter and shepherd,
+From Karnak, Cyprus, Rome;
+The living thoughts in me
+Spring from dead men and women
+Forgotten time out of mind
+And many as bubbles of foam.
+
+Here for a moment's space
+Into the light out of darkness,
+The many in one are mingled,
+Finding words with my breath;
+Like a great voice in me
+I hear them shout:  "Forever
+Seek for Beauty - she only
+Fights with man against death."
+%
+"She Who Could Bind You" by Sara Teasdale
+
+    She who could bind you
+      Could bind fire to a wall;
+    She who could hold you
+      Could hold a waterfall;
+    She who could keep you
+      Could keep the wind from blowing
+    On a warm spring night
+      With a low moon glowing
+%
+"One Hundred Love Sonnets: XVII" by Pablo Neruda
+I don’t love you as if you were a rose of salt, topaz,
+or arrow of carnations that propagate fire:
+I love you as one loves certain obscure things,
+secretly, between the shadow and the soul.
+
+I love you as the plant that doesn’t bloom but carries
+the light of those flowers, hidden, within itself,
+and thanks to your love the tight aroma that arose
+from the earth lives dimly in my body.
+
+I love you without knowing how, or when, or from where,
+I love you directly without problems or pride:
+I love you like this because I don’t know any other way to love,
+except in this form in which I am not nor are you,
+so close that your hand upon my chest is mine,
+so close that your eyes close with my dreams.
+%
+"Love Letter" by Nathalie Handal
+I’d like to be a shrine, so I can learn from 
+peoples’ prayers the story of hearts. 
+I’d like to be a scarf so I can place it 
+over my hair and understand other worlds. 
+I’d like to be the voice of a soprano singer 
+so I can move through all borders and see 
+them vanish with every spell-­binding note. 
+I’d like to be light so I illuminate the dark. 
+I’d like to be water to fill bodies 
+so we can gently float together indefinitely. 
+I’d like to be a lemon, to be zest all the time, 
+or an olive tree to shimmer silver on the earth. 
+Most of all, I’d like to be a poem, 
+to reach your heart and stay.
 %
