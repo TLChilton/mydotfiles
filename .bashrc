@@ -147,3 +147,4 @@ unset __conda_setup
 alias wisdom="fortune | cowsay -n -f turtle"
 alias onetouch="xinput map-to-output 9 eDP1"
 alias multitouch="xinput set-prop 'Raydium Corporation Raydium Touch System' 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1"
+alias disableIR="echo '1-5' | sudo tee /sys/bus/usb/drivers/usb/unbind"
