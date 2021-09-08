@@ -18,8 +18,6 @@ set certificate_file = ~/.mutt/school_gmail/certificates
 
 # SMTP SETTINGS
 set smtp_url = 'smtp://tlchilto@asu.edu@smtp.googlemail.com:587/'
-set ssl_starttls = yes
-set ssl_force_tls = yes
 set smtp_pass = 'insert password here'
 
 auto_view text/html
