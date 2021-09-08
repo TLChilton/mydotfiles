@@ -1,10 +1,11 @@
+# In order to use SMTP authentication you need to have the package "cyrus-common" installed
 
 # Folder hooks
 folder-hook 'gmail' 'source "gpg2 -dq ~/.config/mutt/gmail.gpg |"'
 folder-hook 'school' 'source "gpg2 -dq ~/.config/mutt/school.gpg |"'
 
 # Import Secure Information
-source "gpg2 -dq ~/.config/mutt/school.gpg |"
+source "gpg2 -dq ~/.config/mutt/gmail.gpg |"
 
 # Basic Configuration
 set ssl_starttls = yes
