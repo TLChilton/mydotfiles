@@ -1,0 +1,24 @@
+set from = "thomaschilton93@gmail.com"
+set realname = "Thomas Chilton"
+
+# Imap settings
+set imap_user = "thomaschilton93@gmail.com"
+set imap_pass = "insert password here"
+
+# Smtp settings
+set smtp_url = "smtp://thomaschilton93@smtp.gmail.com:587/"
+set smtp_pass = "insert password here"
+
+# REMOTE GMAIL FOLDERS
+set folder = 'imaps://imap.gmail.com:993'
+set spoolfile = '+INBOX'
+set record = "+[Gmail]/Sent Mail"
+set postponed = '+[Gmail]/Drafts'
+set trash = '+[Gmail]/Trash'
+
+# Local Cache Folders
+set header_cache = ~/.mutt/reg_gmail/cache/headers
+set message_cachedir = ~/.mutt/reg_gmail/cache/bodies
+set certificate_file = ~/.mutt/reg_gmail/certificates
+
+auto_view text/html

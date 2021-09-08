@@ -1,0 +1,25 @@
+set from = 'tlchilto@asu.edu'
+set realname = 'Thomas Chilton'
+
+set imap_user = 'tlchilto@asu.edu'
+set imap_pass = 'insert password here'
+
+# REMOTE GMAIL FOLDERS
+set folder = 'imaps://imap.googlemail.com/'
+set spoolfile = '+INBOX'
+set record = "+[Gmail]/Sent Mail"
+set postponed = '+[Gmail]/Drafts'
+set trash = '+[Gmail]/Trash'
+
+# LOCAL FOLDERS FOR CACHED HEADERS AND CERTIFICATES
+set header_cache = ~/.mutt/school_gmail/cache/headers
+set message_cachedir = ~/.mutt/school_gmail/cache/bodies
+set certificate_file = ~/.mutt/school_gmail/certificates
+
+# SMTP SETTINGS
+set smtp_url = 'smtp://tlchilto@asu.edu@smtp.googlemail.com:587/'
+set ssl_starttls = yes
+set ssl_force_tls = yes
+set smtp_pass = 'insert password here'
+
+auto_view text/html
