@@ -1,11 +1,15 @@
 # In order to use SMTP authentication you need to have the package "cyrus-common" installed
 
-# Folder hooks
-folder-hook 'gmail' 'source "gpg2 -dq ~/.config/mutt/gmail.gpg |"'
-folder-hook 'school' 'source "gpg2 -dq ~/.config/mutt/school.gpg |"'
+set imap_check_subscribed
+set mbox_type=Maildir
 
-# Import Secure Information
+## ACCOUNT 1
 source "gpg2 -dq ~/.config/mutt/gmail.gpg |"
+folder-hook $folder 'source "gpg2 -dq ~/.config/mutt/gmail.gpg |"'
+
+## ACCOUNT 2
+#source "gpg2 -dq ~/.config/mutt/school.gpg |"
+folder-hook 'tlchilto@asu.edu/' 'source "gpg2 -dq ~/.config/mutt/school.gpg |"'
 
 # Basic Configuration
 set ssl_starttls = yes
@@ -18,20 +22,102 @@ set copy = no
 set editor = "vim"
 set charset = "utf-8"
 set record = ""
+set sleep_time = 0
+# Allow Mutt to open a new IMAP connection automatically.
+unset imap_passive
 
 # Macros
 macro index gd "<change-folder>$postponed<enter>" "go to drafts"
-macro index gs "<change-folder>$record<enter>" "go to sent"
+macro index gs "<change-folder>$my_saved<enter>" "go to saved"
+macro index gm "<change-folder>$record<enter>" "go to sent"
 macro index gi "<change-folder>$spoolfile<enter>" "go to inbox"
 macro index gt "<change-folder>$trash<enter>" "go to trash"
 macro index <f2> '<sync-mailbox><enter-command>source "gpg2 -dq ~/.config/mutt/gmail.gpg |"<enter><change-folder>!<enter>'
 macro index <f3> '<sync-mailbox><enter-command>source "gpg2 -dq ~/.config/mutt/school.gpg |"<enter><change-folder>!<enter>' 
+macro index 'c' '<change-folder>?<change-dir><home>^K=<enter>'
+
 # SECURING
 set move = no  #Stop asking to move read messages to mbox!
 set imap_keepalive = 900
 
 # Fetch mail shortcut
 bind index G imap-fetch-mail
+
+## SIDEBAR STUFF
+# Should the Sidebar be shown?
+set sidebar_visible = yes
+
+# How wide should the Sidebar be in screen columns?
+# Note: Some characters, e.g. Chinese, take up two columns each.
+#set sidebar_width = 20
+
+# Should the mailbox paths be abbreviated?
+set sidebar_short_path = yes
+
+# When abbreviating mailbox path names, use any of these characters as path
+# separators.  Only the part after the last separators will be shown.
+# For file folders '/' is good.  For IMAP folders, often '.' is useful.
+set sidebar_delim_chars = '.'
+
+# If the mailbox path is abbreviated, should it be indented?
+set sidebar_folder_indent = yes
+
+# Indent mailbox paths with this string.
+set sidebar_indent_string = ' '
+
+# Make the Sidebar only display mailboxes that contain new, or flagged,
+# mail.
+set sidebar_new_mail_only = no
+
+# When searching for mailboxes containing new mail, should the search wrap
+# around when it reaches the end of the list?
+set sidebar_next_new_wrap = no
+
+# The character to use as the divider between the Sidebar and the other Mutt
+# panels.
+# Note: Only the first character of this string is used.
+#set sidebar_divider_char = '|'
+
+# Enable extended buffy mode to calculate total, new, and flagged
+# message counts for each mailbox.
+set mail_check_stats
+
+# Display the Sidebar mailboxes using this format string.
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+
+# Sort the mailboxes in the Sidebar using this method:
+#       count    - total number of messages
+#       flagged  - number of flagged messages
+#       new      - number of new messages
+#       path     - mailbox path
+#       unsorted - do not sort the mailboxes
+set sidebar_sort_method = 'unsorted'
+
+# Sidebar Keybindings
+bind index,pager B sidebar-toggle-visible
 bind index,pager < sidebar-prev
 bind index,pager , sidebar-next
 bind index,pager M sidebar-open
+
+# Palette for use with the Linux console.  Black background.
+
+color hdrdefault blue black
+color quoted blue black
+color signature blue black
+color attachment red black
+color prompt brightmagenta black
+color message brightred black
+color error brightred black
+color indicator black brightblue
+color status brightgreen blue
+color tree white black
+color normal white black
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+color index yellow black ~N
+color index red black ~O
+
+# color body brightwhite black '\*+[^*]+\*+'
+# color body brightwhite black '_+[^_]+_+'

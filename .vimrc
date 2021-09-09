@@ -84,6 +84,7 @@ let g:ycm_show_diagnostics_ui = 1
 let g:ycm_enable_diagnostics_signs = 1
 let g:ycm_echo_current_diagnostic = 1
 let g:airline_theme='gruvbox'
+highlight YcmWarningSection guibg=#05119c
 
 " Automatically open NERDtree when opening vim
 "autocmd VimEnter * NERDTree | wincmd p
