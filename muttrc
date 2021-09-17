@@ -9,7 +9,7 @@ folder-hook $folder 'source "gpg2 -dq ~/.config/mutt/gmail.gpg |"'
 
 ## ACCOUNT 2
 #source "gpg2 -dq ~/.config/mutt/school.gpg |"
-folder-hook 'tlchilto@asu.edu/' 'source "gpg2 -dq ~/.config/mutt/school.gpg |"'
+#folder-hook '*:993*' 'source "gpg2 -dq ~/.config/mutt/school.gpg |"'
 
 # Basic Configuration
 set ssl_starttls = yes
