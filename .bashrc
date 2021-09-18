@@ -150,3 +150,4 @@ alias multitouch="xinput set-prop 'Raydium Corporation Raydium Touch System' 'Co
 alias disableIR="echo '1-5' | sudo tee /sys/bus/usb/drivers/usb/unbind"
 alias vertMonitor="xrandr --output HDMI2 --rotate left && /home/thomas/Scripts/vertWallPaperChange.sh"
 alias horiMonitor="xrandr --output HDMI2 --rotate normal && /home/thomas/Scripts/horiWallPaperChange.sh"
+alias notes="xdg-open /home/thomas/Documents/ComputerNotes.odt"
