@@ -125,24 +125,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-export GOPATH=$HOME/gopath
-export PATH=$GOPATH:$GOPATH/bin:$PATH
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/thomas/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/thomas/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/thomas/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/thomas/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 # My custom aliases
 alias wisdom="fortune | cowsay -n -f turtle"
 alias onetouch="xinput map-to-output 9 eDP1"
@@ -150,4 +132,23 @@ alias multitouch="xinput set-prop 'Raydium Corporation Raydium Touch System' 'Co
 alias disableIR="echo '1-5' | sudo tee /sys/bus/usb/drivers/usb/unbind"
 alias vertMonitor="xrandr --output HDMI2 --rotate left && /home/thomas/Scripts/vertWallPaperChange.sh"
 alias horiMonitor="xrandr --output HDMI2 --rotate normal && /home/thomas/Scripts/horiWallPaperChange.sh"
-alias notes="xdg-open /home/thomas/Documents/ComputerNotes.odt"
+export GOPATH=$HOME/gopath
+export PATH=$GOPATH:$GOPATH/bin:$PATH
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/tchilto/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/tchilto/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/tchilto/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/tchilto/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
