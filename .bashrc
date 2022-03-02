@@ -132,6 +132,8 @@ alias multitouch="xinput set-prop 'Raydium Corporation Raydium Touch System' 'Co
 alias disableIR="echo '1-5' | sudo tee /sys/bus/usb/drivers/usb/unbind"
 alias vertMonitor="xrandr --output HDMI2 --rotate left && /home/thomas/Scripts/vertWallPaperChange.sh"
 alias horiMonitor="xrandr --output HDMI2 --rotate normal && /home/thomas/Scripts/horiWallPaperChange.sh"
+alias rclone="rclone -v --interactive"
+alias rclonev="rclone -vv --interactive"
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 export VISUAL=vim
@@ -152,3 +154,20 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+. "$HOME/.cargo/env"
+
+function countdown(){
+   date1=$((`date +%s` + $1)); 
+   while [ "$date1" -ge `date +%s` ]; do 
+     echo -ne "$(date -u --date @$(($date1 - `date +%s`)) +%H:%M:%S)\r";
+     sleep 0.1
+   done
+   play -q -n synth 2 pluck C5;
+}
+function stopwatch(){
+  date1=`date +%s`; 
+   while true; do 
+    echo -ne "$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r"; 
+    sleep 0.1
+   done
+}
